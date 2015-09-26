@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_row_selector"
+    android:padding="8dp" >
+
+    <!-- Thumbnail Image -->
+    <ImageView
+        android:id="@+id/thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/android_avatar" />
+
+    <!-- Movie Title -->
+
+    <!-- Rating -->
+
+    <TextView
+        android:id="@+id/photosCount"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/thumbnail"
+        android:layout_alignLeft="@+id/city"
+        android:text="No.of Photos"
+        android:textSize="@dimen/rating" />
+
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Charlotte"
+        android:textSize="@dimen/title"
+        android:textStyle="bold" />
+
+</RelativeLayout>
